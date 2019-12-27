@@ -1,0 +1,19 @@
+.shop-row {
+    min-height: calc(100% - 100px);
+    min-height: calc(100vh - 100px);
+    max-height: calc(100% - 100px);
+    max-height: calc(100vh - 100px);
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,.70), rgba(255,255,255,.70)), url("../images/techbackground.jpg");
+    background-size: 100% 100%;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+
+.shop-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(1.2vw + 1.2vh);
+}

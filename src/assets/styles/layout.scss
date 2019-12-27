@@ -1,0 +1,37 @@
+html,body {
+    height: 100%;
+}
+
+#root {
+    font-family: Source;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    .root-container {
+        padding-top: 58px;
+        overflow-y: auto;
+    }
+}
+
+
+
+.brand-image {
+    padding-bottom: 0px;
+    border-radius: 4px;
+}
+
+.navbar {
+    background-color: $primary-color;
+    overflow-y: hidden;
+}
+
+.active-link {
+    color: white !important;
+    background-color: $accent-color !important;
+}
+
+.navbar-style {
+    width: 100vh;
+}
+
