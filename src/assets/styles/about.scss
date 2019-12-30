@@ -1,0 +1,69 @@
+.about-page {
+  min-height: 100vh;
+  text-align: center;
+  align-content: center;
+  font-size: 1rem;
+
+  .about-link {
+    font-weight: bold;
+    color: $accent-color;
+
+    a:hover {
+      color: $accent-color;
+    }
+  }
+
+  p {
+    margin-bottom: $small-size;
+  }
+
+
+  .about-button {
+    font-size: $large-size;
+    background-color: $accent-color;
+    border-color: $light-accent-color;
+  }
+}
+
+.social-container {
+  font-size: 20px;
+  position: fixed;
+  bottom: $extra-large-size;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: auto;
+  text-align: center;
+
+  .fa-twitter {
+    cursor: pointer;
+    color: $twitter-brand-blue;
+    margin-left: $small-size;
+    margin-right: $small-size;
+    font-size: 3rem;
+  }
+
+  .fa-github {
+    cursor: pointer;
+    color: $github-brand-gray;
+    margin-left: $small-size;
+    margin-right: $small-size;
+    font-size: 3rem;
+  }
+
+  .fa-linkedin {
+    cursor: pointer;
+    color: $linkedin-brand-blue;
+    margin-left: $small-size;
+    margin-right: $small-size;
+    font-size: 3rem;
+  }
+
+  .fa-youtube {
+    cursor: pointer;
+    color: $youtube-brand-red;
+    margin-left: $small-size;
+    margin-right: $small-size;
+    font-size: 3rem;
+  }
+}

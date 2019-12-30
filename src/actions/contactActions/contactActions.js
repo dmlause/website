@@ -6,7 +6,7 @@ import {toast} from "react-toastify";
 export function updateProperty(property, value) {
     return {
         type: types.UPDATE_CONTACT_PAGE,
-        contact: {
+        payload: {
             [property]: value
         }
     };

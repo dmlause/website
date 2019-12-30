@@ -4,7 +4,7 @@ import {Route, BrowserRouter} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import configureStore from './store';
 import App from './components/App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './utils/serviceWorker';
 import './assets/styles/main.scss';
 
 const root = document.getElementById('root');

@@ -1,13 +1,17 @@
 import React from 'react';
 import {Navbar, Nav,} from 'react-bootstrap';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin, faGithub, faTwitter, faFacebook, faYoutube} from "@fortawesome/free-brands-svg-icons";
 
+/**
+ * Navbar Component, rendered in App.js
+ * @param props
+ * @returns {Navigation}
+ */
 const Navigation = (props) => {
 
     const isActive = (href) => {
         return window.location.pathname === href;
     };
+
     return (
         <>
             <Navbar fixed="top" expand="sm">
@@ -37,28 +41,6 @@ const Navigation = (props) => {
                             Contact
                         </Nav.Link>
                     </Nav>
-                    {/*<Nav>*/}
-                        {/*<Nav.Item>*/}
-                            {/*<Nav.Link href="https://linkedin.com/in/dereklause/">*/}
-                                {/*<FontAwesomeIcon icon={faLinkedin} title="Derek's LinkedIn"/>*/}
-                            {/*</Nav.Link>*/}
-                        {/*</Nav.Item>*/}
-                        {/*<Nav.Item>*/}
-                            {/*<Nav.Link href="https://github.com/dmlause">*/}
-                                {/*<FontAwesomeIcon icon={faGithub} title="Derek's Github"/>*/}
-                            {/*</Nav.Link>*/}
-                        {/*</Nav.Item>*/}
-                        {/*<Nav.Item>*/}
-                            {/*<Nav.Link href="https://twitter.com/dmlause">*/}
-                                {/*<FontAwesomeIcon icon={faTwitter} title="Derek's Twitter"/>*/}
-                            {/*</Nav.Link>*/}
-                        {/*</Nav.Item>*/}
-                        {/*<Nav.Item title="Derek Lause Youtube Channel">*/}
-                            {/*<Nav.Link href="https://youtube.com/channel/UCNoAX-XqNBMlP7CkEYgewVg">*/}
-                                {/*<FontAwesomeIcon icon={faYoutube} title="Derek's Youtube"/>*/}
-                            {/*</Nav.Link>*/}
-                        {/*</Nav.Item>*/}
-                    {/*</Nav>*/}
                 </Navbar.Collapse>
             </Navbar>
         </>

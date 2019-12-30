@@ -9,6 +9,10 @@ import Contact from '../components/pages/Contact';
 import Nav from '../components/layout/Nav';
 
 class App extends React.Component {
+    componentDidMount() {
+        document.title = "Derek Lause"
+    }
+
     render() {
         return (
             <>

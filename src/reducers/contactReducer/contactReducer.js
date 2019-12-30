@@ -5,7 +5,7 @@ export default function contactReducer(state = initialState.contact, action) {
 
     switch(action.type) {
         case UPDATE_CONTACT_PAGE:
-            return {...state, contact: action.contact};
+            return {...state, contact: action.payload};
 
         default:
             return state;

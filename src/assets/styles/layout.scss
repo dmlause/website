@@ -1,3 +1,6 @@
+/*
+  Root styles
+ */
 html,body {
     height: 100%;
 }
@@ -9,13 +12,14 @@ html,body {
     max-width: 100%;
 
     .root-container {
-        padding-top: 58px;
+        background-color: $light-primary-color;
         overflow-y: auto;
     }
 }
 
-
-
+/**
+  Navbar styles
+ */
 .brand-image {
     padding-bottom: 0px;
     border-radius: 4px;
@@ -26,12 +30,12 @@ html,body {
     overflow-y: hidden;
 }
 
-.active-link {
-    color: white !important;
-    background-color: $accent-color !important;
-}
-
 .navbar-style {
     width: 100vh;
 }
 
+
+.active-link {
+    color: white !important;
+    background-color: $accent-color !important;
+}
