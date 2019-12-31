@@ -3,8 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import {ToastContainer} from 'react-toastify';
 import {withRouter} from 'react-router-dom';
 import Socials from '../layout/Socials';
-import {connect, useDispatch, useSelector} from "react-redux";
-import {bindActionCreators} from "redux";
+import {useDispatch, useSelector} from "react-redux";
 import {updateProperty} from "../../actions/contactActions/contactActions";
 import {Row, Col} from 'react-bootstrap';
 
@@ -39,22 +38,5 @@ const Contact = (props) => {
         </>
     );
 };
-
-// const mapStateToProps = (state) => {
-//     return {
-//         firstName: state.contact.firstName,
-//         lastName: state.contact.lastName,
-//         email: state.contact.email,
-//         message: state.contact.message,
-//         value: state.contact.value,
-//         expired: state.contact.expired
-//     };
-// };
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         contactActions: bindActionCreators(contactActions, dispatch),
-//     };
-// };
 
 export default withRouter(Contact);
