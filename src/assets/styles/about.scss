@@ -2,7 +2,7 @@
   min-height: 100vh;
   text-align: center;
   align-content: center;
-  font-size: 1rem;
+  font-size: $regular-size;
 
   .about-link {
     font-weight: bold;
@@ -19,14 +19,17 @@
 
 
   .about-button {
-    font-size: $large-size;
+    font-size: $regular-size;
     background-color: $accent-color;
     border-color: $light-accent-color;
   }
 }
 
+/*
+  Social Container
+ */
 .social-container {
-  font-size: 20px;
+  font-size: $regular-size;
   position: fixed;
   bottom: $extra-large-size;
   width: 100%;
@@ -40,7 +43,7 @@
     color: $twitter-brand-blue;
     margin-left: $small-size;
     margin-right: $small-size;
-    font-size: 3rem;
+    font-size: $extra-large-size + 0.5rem;
   }
 
   .fa-github {
@@ -48,7 +51,7 @@
     color: $github-brand-gray;
     margin-left: $small-size;
     margin-right: $small-size;
-    font-size: 3rem;
+    font-size: $extra-large-size + 0.5rem;
   }
 
   .fa-linkedin {
@@ -56,7 +59,7 @@
     color: $linkedin-brand-blue;
     margin-left: $small-size;
     margin-right: $small-size;
-    font-size: 3rem;
+    font-size: $extra-large-size + 0.5rem;
   }
 
   .fa-youtube {
@@ -64,6 +67,6 @@
     color: $youtube-brand-red;
     margin-left: $small-size;
     margin-right: $small-size;
-    font-size: 3rem;
+    font-size: $extra-large-size + 0.5rem;
   }
 }

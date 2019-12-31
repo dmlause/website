@@ -14,7 +14,7 @@ export function endAjaxCall() {
 
 export function ajaxCallError(error) {
     return function (dispatch) {
-        if (error == 401) {
+        if (error === 401) {
             dispatch(endAjaxCall());
             console.log("401: Unauthorized");
         }

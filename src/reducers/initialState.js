@@ -1,8 +1,11 @@
 export default {
     ajaxCallsInProgress: 0,
     contact: {
-        subject: '',
+        firstName: '',
+        lastName: '',
+        email: '',
         message: '',
         value: '',
+        expired: false,
     },
 };
