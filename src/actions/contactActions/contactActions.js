@@ -12,21 +12,32 @@ export function updateProperty(property, value) {
     };
 }
 
+
+
+export function clearContact() {
+    return {
+        type: types.CLEAR_CONTACT_PAGE
+    }
+}
+
 export function sendEmail(email) {
 
-    const url = window.API_URL = + '/api/sendEmail?param=' + email.param;
-    return function (dispatch) {
-        dispatch(beginAjaxCall());
-        return authorizedGet(url)
-            .then(json => {
-                dispatch(endAjaxCall());
-                return json;
-            })
-            .catch(error => {
-                dispatch(ajaxCallError(error));
-                return toast.error('Failed to send email');
-            })
-    }
+    console.log(email);
+
+    // const url = window.API_URL = + '/api/sendEmail?param=' + email.param;
+    // return function (dispatch) {
+    //     dispatch(beginAjaxCall());
+    //     return authorizedGet(url)
+    //         .then(response => {
+    //             const json = response.json();
+    //             dispatch(endAjaxCall());
+    //             return json;
+    //         })
+    //         .catch(error => {
+    //             dispatch(ajaxCallError(error));
+    //             return toast.error('Failed to send email');
+    //         })
+    // }
 }
 
 /**

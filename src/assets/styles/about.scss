@@ -28,10 +28,15 @@
 /*
   Social Container
  */
+@media screen and (max-device-width: $iphone678-max-width) and (max-device-height: $iphone678-max-height) {
+  .social-container {
+    position: static !important;
+  }
+}
 .social-container {
   font-size: $regular-size;
   position: fixed;
-  bottom: $extra-large-size;
+  bottom: $regular-size;
   width: 100%;
   height: auto;
   left: 0;

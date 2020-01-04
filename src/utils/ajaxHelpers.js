@@ -9,13 +9,23 @@ export function serialize(searchOptions) {
     return query.join("&");
 }
 
+/**
+ * Performs a basic GET request to url
+ * @param url {string}
+ * @returns {response}
+ */
 export function noAuthget(url) {
     return fetch(url, {
         method: "GET"
     })
-        .then(response => response.json());
+        .then(response => response);
 }
 
+/**
+ * Performs an authorized GET request via the token in localStorage
+ * @param url {string}
+ * @returns {response}
+ */
 export function authorizedGet(url) {
     return fetch(url, {
         method: "GET",
@@ -23,11 +33,7 @@ export function authorizedGet(url) {
             'Authorization': 'Bearer ' + localStorage.getItem("token")
         }
     })
-        .then(response => {
-            if(response.headers.get('contet-type')) {
-                return response.json();
-            }
-        });
+        .then(response => response);
 }
 
 export function authorizedPost(url, postBody) {
@@ -35,7 +41,7 @@ export function authorizedPost(url, postBody) {
         method: "POST",
         headers: {
             'Authorization': 'Bearer ' + localStorage.getItem("token"),
-        'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(postBody)
     })

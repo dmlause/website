@@ -1,6 +1,33 @@
+/**
+  SCSS overrides for devices with max width of 320px
+ */
+@media screen and (max-device-width: $iphone678-max-width) and (max-device-height: $iphone678-max-height) {
+  .contact-page {
+    padding-top: 3.5rem !important;
+    .contact-button {
+      font-size: $regular-size !important;
+    }
+  }
+}
+
 .contact-page {
   min-height: 100vh;
+  padding-top: $small-size;
   text-align: center;
   align-content: center;
   font-size: $regular-size;
+  overflow-y: auto;
+
+  .contact-form {
+
+    label {
+      text-align: left;
+    }
+  }
+
+  .contact-button {
+    font-size: $large-size;
+    background-color: $accent-color;
+    border-color: $light-accent-color;
+  }
 }

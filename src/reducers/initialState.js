@@ -1,8 +1,8 @@
 export default {
     ajaxCallsInProgress: 0,
     contact: {
-        firstName: '',
-        lastName: '',
+        name: '',
+        reason: '',
         email: '',
         message: '',
         value: '',
