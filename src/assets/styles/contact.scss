@@ -1,7 +1,7 @@
 /**
   SCSS overrides for devices with max width of 320px
  */
-@media screen and (max-device-width: $iphone678-max-width) and (max-device-height: $iphone678-max-height) {
+@media screen and (max-device-width: $iphone5se-max-width) {
   .contact-page {
     padding-top: 3.5rem !important;
     .contact-button {

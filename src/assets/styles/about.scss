@@ -17,7 +17,6 @@
     margin-bottom: $small-size;
   }
 
-
   .about-button {
     font-size: $regular-size;
     background-color: $accent-color;
@@ -28,11 +27,12 @@
 /*
   Social Container
  */
-@media screen and (max-device-width: $iphone678-max-width) and (max-device-height: $iphone678-max-height) {
+@media screen and (max-device-width: $iphone5se-max-width) {
   .social-container {
     position: static !important;
   }
 }
+
 .social-container {
   font-size: $regular-size;
   position: fixed;
