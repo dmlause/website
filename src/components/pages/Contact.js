@@ -5,7 +5,8 @@ import Socials from '../layout/Socials';
 import {useDispatch, useSelector} from "react-redux";
 import {sendEmail, updateProperty} from "../../actions/contactActions/contactActions";
 import {Row, Col, Form, Button} from 'react-bootstrap';
-import validator from 'validator';
+import isEmail from 'validator/lib/isEmail';
+import isEmpty from 'validator/lib/isEmpty';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
@@ -19,6 +20,8 @@ const Contact = props => {
     const message = useSelector(state => state.contact.message);
     const value = useSelector(state => state.contact.value);
     const expired = useSelector(state => state.contact.expired);
+    const loading = useSelector(state => state.ajaxCallsInProgress > 0);
+    const disabled = expired || !value || !isEmail(email) || isEmpty(message) || isEmpty(name);
 
     return (
         <>
@@ -28,21 +31,22 @@ const Contact = props => {
                         <Form.Group as={Row}>
                             <Form.Label column sm={{span: 2}}>Name</Form.Label>
                             <Col sm={{span: 8}}>
-                                <Form.Control type="text" name="name" value={name} length={10}
+                                <Form.Control type="text" name="name" value={name} length={10} isValid={!isEmpty(name)}
                                               onChange={(e) => dispatch(updateProperty(e.target.name, e.target.value))}/>
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row}>
                             <Form.Label column sm={{span: 2}}>Email</Form.Label>
                             <Col sm={{span: 8}}>
-                                <Form.Control type="text" name="email" value={email}
+                                <Form.Control type="text" name="email" value={email} isValid={isEmail(email)}
                                               onChange={(e) => dispatch(updateProperty(e.target.name, e.target.value))}/>
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row}>
                             <Form.Label column sm={{span: 2}}>Message</Form.Label>
                             <Col sm={{span: 8}}>
-                                <Form.Control as="textarea" placeholder="Message here..." rows="3" name="message" value={message}
+                                <Form.Control as="textarea" placeholder="Message here..." rows="3" name="message"
+                                              value={message} isValid={!isEmpty(message)}
                                               onChange={(e) => dispatch(updateProperty(e.target.name, e.target.value))}/>
                             </Col>
                         </Form.Group>
@@ -61,7 +65,7 @@ const Contact = props => {
                         }}/>
                     <br/>
                     <Button className="contact-button"
-                            disabled={expired || !value}
+                            disabled={disabled}
                             onClick={() => dispatch(sendEmail())} title="Contact Derek Lause">
                         Send Message <FontAwesomeIcon icon={faPaperPlane}/>
                     </Button>

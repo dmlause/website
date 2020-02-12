@@ -9,7 +9,7 @@ const Socials = () => {
             <div className="social-container">
                 <Row>
                     <Col md={{span: 4, offset: 4}}>
-                        Follow me
+                        Follow me!
                     </Col>
                 </Row>
                 <Row>
