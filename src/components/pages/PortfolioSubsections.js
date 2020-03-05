@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 // Work Experience subsection for the portfolio page
 export const WorkExperience = () => {
     return (
-        <Card className="panel-border">
+        <Card style={{ width:'50%'}}>
           <Card.Heading>
             <Card.Title toggle className="section-text">
               Work Experience

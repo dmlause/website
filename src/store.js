@@ -5,14 +5,7 @@ import rootReducer from './reducers/index';
 
 export default function configureStore(initialState) {
 
-    // if(process.env.NODE_ENV === 'production') {
-    //     return createStore(
-    //         rootReducer,
-    //         initialState,
-    //         applyMiddleware(thunk)
-    //     );
-    // }
-    // else {
+        // TODO: add NODE_ENV check to have different stores for dev and prod
         return createStore(
             rootReducer,
             initialState,
