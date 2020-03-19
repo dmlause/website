@@ -14,7 +14,7 @@ const Portfolio = props => {
                     <h2>
                         Welcome to my portfolio!
                     </h2>
-                    <
+                    <ProficientTechAndSkills/>
                 </Col>
             </Row>
         </>
