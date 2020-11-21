@@ -19,7 +19,7 @@ const App = props => {
                 <Switch>
                     <Route exact path="/" component={About}/>
                     {/* <Route path="/content" component={Content}/> */}
-                    <Route path="/shop" component={Shop}/>
+                    {/*<Route path="/shop" component={Shop}/>*/}
                     <Route path="/portfolio" component={Portfolio}/>
                     <Route path="/contact" component={Contact}/>
                 </Switch>

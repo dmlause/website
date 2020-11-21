@@ -10,6 +10,12 @@ import isEmpty from 'validator/lib/isEmpty';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * Contact page component, utilizing hooks!
+ * @param props
+ * @returns {*}
+ * @constructor
+ */
 const Contact = props => {
     document.title = "Derek Lause | Contact";
 
