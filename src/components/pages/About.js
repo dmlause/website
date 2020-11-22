@@ -19,7 +19,7 @@ const About = props => {
                                                                                            className="about-link">portfolio
                             page</a>.</p>
                         <p>Check out my <a href='https://dlause.blogspot.com' className="about-link">blog
-                            content</a> about everything technology</p>
+                            content</a> for everything tech.</p>
                         <Button className="about-button" href="/contact" title="Contact Derek Lause">
                             Contact Derek <FontAwesomeIcon icon={faPaperPlane}/>
                         </Button>

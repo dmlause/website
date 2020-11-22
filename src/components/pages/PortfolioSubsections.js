@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, ProgressBar } from 'react-bootstrap';
+import { Card, ProgressBar, Row, Col } from 'react-bootstrap';
 
 // Work Experience subsection for the portfolio page
 export const WorkExperience = () => {
@@ -165,22 +165,35 @@ export const ProficientTechAndSkills = () => {
         <Card>
           <Card.Header>
             <Card.Title toggle>
-              Proficient Technologies & Skills
+              Proficiencies
             </Card.Title>
           </Card.Header>
             <Card.Body>
-              <p>HTML 5</p>
-              <ProgressBar variant="success" now={90} />
-              <p>ReactJS</p>
-              <ProgressBar variant="success" now={90} />
-              <p>Oracle SQL</p>
-              <ProgressBar variant="success" now={90} />
-              <p>Agile & SCRUM</p>
-              <ProgressBar variant="success" now={90} />
-              <p>Bootstrap Styling</p>
-              <ProgressBar variant="success" now={90} />
-              <p>Java Spring Boot</p>
-              <ProgressBar variant="success" now={90} />
+              <Row>
+                <Col>Technical</Col>
+                <Col>Professional</Col>
+                <Col>Personal</Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Row>
+                    <Col>HTML 5</Col>
+                    <Col><ProgressBar variant="success" now={90}/></Col>
+                  </Row>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+              {/*<p>ReactJS</p>*/}
+              {/*<ProgressBar variant="success" now={90} />*/}
+              {/*<p>Oracle SQL</p>*/}
+              {/*<ProgressBar variant="success" now={90} />*/}
+              {/*<p>Agile & SCRUM</p>*/}
+              {/*<ProgressBar variant="success" now={90} />*/}
+              {/*<p>Bootstrap Styling</p>*/}
+              {/*<ProgressBar variant="success" now={90} />*/}
+              {/*<p>Java Spring Boot</p>*/}
+              {/*<ProgressBar variant="success" now={90} />*/}
             </Card.Body>
         </Card>
     );

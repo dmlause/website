@@ -51,8 +51,7 @@ const Contact = props => {
                         <Form.Group as={Row}>
                             <Form.Label column sm={{span: 2}}>Message</Form.Label>
                             <Col sm={{span: 8}}>
-                                <Form.Control as="textarea" placeholder="Message here..." rows="3" name="message"
-                                              value={message} isValid={!isEmpty(message)}
+                                <Form.Control as="textarea" rows="3" name="message" value={message} isValid={!isEmpty(message)}
                                               onChange={(e) => dispatch(updateProperty(e.target.name, e.target.value))}/>
                             </Col>
                         </Form.Group>
@@ -70,10 +69,9 @@ const Contact = props => {
                             dispatch(updateProperty('value', value));
                         }}/>
                     <br/>
-                    <Button className="contact-button"
-                            disabled={disabled}
+                    <Button className="contact-button" disabled={disabled}
                             onClick={() => dispatch(sendEmail())} title="Contact Derek Lause">
-                        Send Message <FontAwesomeIcon icon={faPaperPlane}/>
+                        Send message <FontAwesomeIcon icon={faPaperPlane}/>
                     </Button>
                     <Socials/>
                 </Col>
