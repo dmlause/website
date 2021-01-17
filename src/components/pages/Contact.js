@@ -26,7 +26,7 @@ const Contact = props => {
     const message = useSelector(state => state.contact.message);
     const value = useSelector(state => state.contact.value);
     const expired = useSelector(state => state.contact.expired);
-    const loading = useSelector(state => state.ajaxCallsInProgress > 0);
+    // const loading = useSelector(state => state.ajaxCallsInProgress > 0);
     const disabled = expired || !value || !isEmail(email) || isEmpty(message) || isEmpty(name);
 
     return (

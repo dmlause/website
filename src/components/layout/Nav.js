@@ -23,7 +23,6 @@ const Navigation = (props) => {
                          border="4"
                          className="brand-image"
                     />
-                    &nbsp;Derek Lause
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import {withRouter} from 'react-router-dom';
-import { WorkExperience, Education, Certifications, SoftwareProjects, ProficientTechAndSkills } from './PortfolioSubsections';
+import {ProficientTechAndSkills} from './PortfolioSubsections';
 
 
 const Portfolio = props => {

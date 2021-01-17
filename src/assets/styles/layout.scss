@@ -2,18 +2,20 @@
   Root styles
  */
 html,body {
-    height: 100%;
+    background-color: $light-primary-color;
 }
 
 #root {
     font-family: Source;
-    min-height: 100%;
     min-width: 100%;
     max-width: 100%;
 
     .root-container {
-        background-color: $light-primary-color;
-        overflow-y: auto;
+        margin-top: 56px;
+        height: calc(100vh - 56px);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow: auto;
     }
 }
 
@@ -27,7 +29,6 @@ html,body {
 
 .navbar {
     background-color: $primary-color;
-    overflow-y: hidden;
 }
 
 .navbar-toggler-icon {

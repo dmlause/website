@@ -176,24 +176,48 @@ export const ProficientTechAndSkills = () => {
               </Row>
               <Row>
                 <Col>
-                  <Row>
-                    <Col>HTML 5</Col>
-                    <Col><ProgressBar variant="success" now={90}/></Col>
-                  </Row>
+                  HTML & CSS<ProgressBar variant="success" now={90}/>
                 </Col>
                 <Col></Col>
                 <Col></Col>
               </Row>
-              {/*<p>ReactJS</p>*/}
-              {/*<ProgressBar variant="success" now={90} />*/}
-              {/*<p>Oracle SQL</p>*/}
-              {/*<ProgressBar variant="success" now={90} />*/}
-              {/*<p>Agile & SCRUM</p>*/}
-              {/*<ProgressBar variant="success" now={90} />*/}
-              {/*<p>Bootstrap Styling</p>*/}
-              {/*<ProgressBar variant="success" now={90} />*/}
-              {/*<p>Java Spring Boot</p>*/}
-              {/*<ProgressBar variant="success" now={90} />*/}
+              <Row>
+                <Col>
+                  Javascript<ProgressBar variant="success" now={90}/>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+              <Row>
+                <Col>
+                  SQL<ProgressBar variant="success" now={90}/>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+              <Row>
+                <Col>
+                  Java<ProgressBar variant="success" now={90}/>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+              <Row>
+                <Col>
+                  ReactJS<ProgressBar variant="success" now={90}/>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+              <Row>
+                <Col>
+                  Spring Boot
+                  <ProgressBar variant="success" now={90}/>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+              <p>Agile & SCRUM</p>
             </Card.Body>
         </Card>
     );

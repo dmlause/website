@@ -1,8 +1,8 @@
 import React from 'react';
-import {Col, Container} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import {withRouter, Route, Switch} from 'react-router-dom';
 import About from '../components/pages/About';
-import Shop from '../components/pages/Shop';
+// import Shop from '../components/pages/Shop';
 import Portfolio from '../components/pages/Portfolio';
 import Contact from '../components/pages/Contact';
 import Nav from '../components/layout/Nav';

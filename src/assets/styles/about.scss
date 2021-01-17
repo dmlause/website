@@ -1,5 +1,4 @@
 .about-page {
-  min-height: 100vh;
   text-align: center;
   align-content: center;
   font-size: $regular-size;
@@ -13,34 +12,36 @@
     }
   }
 
-  p {
-    margin-bottom: $small-size;
-  }
-
   .about-button {
     font-size: $regular-size;
     background-color: $accent-color;
     border-color: $light-accent-color;
+    margin-top: $small-size;
+  }
+
+  .about-card {
+
+  }
+
+  section {
+    align-content: center;
+    margin-bottom: calc(2 * 2rem);
+  }
+
+  p {
+    margin-top: $small-size;
+    margin-bottom: $small-size;
   }
 }
 
 /*
   Social Container
  */
-@media screen and (max-device-width: $iphone5se-max-width) {
-  .social-container {
-    position: static !important;
-  }
-}
 
 .social-container {
   font-size: $regular-size;
-  position: fixed;
-  bottom: $regular-size;
   width: 100%;
   height: auto;
-  left: 0;
-  top: auto;
   text-align: center;
 
   .fa-twitter {
